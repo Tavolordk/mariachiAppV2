@@ -11,6 +11,12 @@
   <link rel="shortcut icon" href="img/skeleton-5628201_1280.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/472951e964.js" crossorigin="anonymous"></script>
   <style>
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
     /* Estilos personalizados */
     .navbar {
       background: linear-gradient(to right,#006341, #b3a7a7,#d10920); /* Degradado con los colores de la bandera */
@@ -44,6 +50,7 @@
 }
 .bg-mariachi{
   background: linear-gradient(to right,#000, #FFD700,#000); /* Degradado con los colores de la bandera */
+height: auto;
 }
     .footer {
       background-color: #000; /* Fondo negro */
@@ -53,6 +60,16 @@
 .text-justify{
   text-align: justify;
 }
+.mg-config{
+  display: none;
+}
+@media (max-width: 480px) {
+    .mg-config {
+        display: flex; /* Mayor separación de abajo en dispositivos para celulares */
+    }
+}
+
+
   </style>
 </head>
 <body>
@@ -145,12 +162,14 @@
       </button>
     </div>
   </div>
-  <div class="container-fluid row m-0 mb-3 p-3 bg-mariachi">
+  <div class="container-fluid bg-mariachi p-5">
     <h1 class="text-center h1-3d"><span class="fs-3 verde">Pac</span>
       <span class="fs-3">ka</span>
       <span class="fs-3 rojo">ges</span>
     </h1>
-    <div class="card col-sm-12 col-md-3 col-lg-3 col-xl-3 col-12 m-5">
+   <div class="row m-3">
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+     <div class="card h-100 p-2">
       <img src="img/jalisco6.jpg" class="img-fluid mt-2 rounded" alt="7">
       <div class="card-body">
         <p class="card-text">
@@ -174,8 +193,10 @@
           </ul>
         </p>
       </div>
+     </div>
     </div>
-    <div class="card col-sm-12 col-md-3 col-lg-3 col-xl-3 col-12 m-5">
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-12 mb-3">
+     <div class="card h-100 p-2">
       <img src="img/jalisco7.jpg" class="img-fluid mt-2 rounded" alt="8">
       <div class="card-body">
         <p class="card-text">
@@ -188,20 +209,24 @@
           </ul>          
         </p>
       </div>
+     </div>
     </div>
-    <div class="card col-sm-12 col-md-3 col-lg-3 col-xl-3 col-12 m-5">
-      <img src="img/jalisco8.jpg" class="img-fluid mt-2 rounded" alt="9">
-      <div class="card-body">
-        <p class="card-text">
-          Promotion for 1 hour on Saturday and Sunday:
-          <ul>
-            <li>5 members = $2,900</li>
-            <li>6 members = $3,300</li>
-            <li>7 members = $3,700</li>
-          </ul>          
-        </p>
-      </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 col-12 mb-3">
+<div class="card h-100 p-2">
+  <img src="img/jalisco8.jpg" class="img-fluid mt-2 rounded" alt="9">
+  <div class="card-body">
+    <p class="card-text">
+      Promotion for 1 hour on Saturday and Sunday:
+      <ul>
+        <li>5 members = $2,900</li>
+        <li>6 members = $3,300</li>
+        <li>7 members = $3,700</li>
+      </ul>          
+    </p>
+  </div>
+</div>
     </div>
+   </div>
   </div>
 
   <div class="container-fluid m-0 mb-3 p-3 row">
