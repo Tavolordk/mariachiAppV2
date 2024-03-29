@@ -40,3 +40,14 @@
       transform: scale(1) rotateZ(-3deg);
     }
   }
+
+  .h2-section{
+    position: relative;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #000;
+    z-index: 1;
+  }
