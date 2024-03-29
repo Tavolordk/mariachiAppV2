@@ -553,14 +553,21 @@
     window.addEventListener('scroll', function() {
     let navbar = document.querySelector('.navbar');
     let navItem = document.querySelectorAll('.nav-link');
+    let navbarCollapse = document.querySelector('.navbar-toggler');
     if (window.scrollY > 50) {
         navbar.classList.add('scroll-navbar');
         navItem.forEach(e=>{e.classList.remove('text-white')});
         navItem.forEach(e=>{e.classList.add('text-dark')});
+        navbarCollapse.style.color='#000';
+        navbarCollapse.style.backgroundColor='#000';
+        navbarCollapse.style.border='#000';
     } else {
         navbar.classList.remove('scroll-navbar');
         navItem.forEach(e=>{e.classList.remove('text-dark')});
         navItem.forEach(e=>{e.classList.add('text-white')});
+        navbarCollapse.style.color='transparent';
+        navbarCollapse.style.backgroundColor='transparent';
+        navbarCollapse.style.border='transparent';
     }
 });
 
