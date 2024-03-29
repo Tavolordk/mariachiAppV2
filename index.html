@@ -39,9 +39,9 @@
         position: relative;
       }
 
-      .fixed-block {
+      .fixed-block { 
         position: fixed; /* Fixed position */
-        top: 20px; /* Distance from the top */
+        top: 40px; /* Distance from the top */
         right: 20px; /* Distance from the right */
         background-color: #007bff;
         color: #fff;
@@ -183,8 +183,46 @@
     </header>
 
     <main>
-      <section id="about" class="container-fluid p-5 bg-body-secondary">
+      <section id="about" class="container-fluid">
         <h2 class="h2-section mx-4 text-center p-5 fs-3">ABOUT</h2>
+        <div class="row">
+          <!-- col start -->
+          <div class="col-md-4 col-sm-4">
+              <!-- intro start -->
+              <div class="intro-years">
+                  <h2>
+                      Years
+                  </h2>
+                  <div class="borders-berlin"></div>
+                  <h3 class="facts-counter-number">13</h3>
+                  <h4>
+                      of Service
+                  </h4>
+              </div><!-- intro end -->
+          </div><!-- col end -->
+          <!-- col start -->
+          <div class="col-md-8 col-sm-8">
+              <!-- quote start -->
+              <blockquote>
+                  <p class="text-justify">
+                    The "Mariachi Nuevo Jalisco", located in San Antonio and Austin,
+                    Texas is one of the best mariachi bands that there is to
+                    interpret the entire Mexican folklore music, from the joy of one
+                    happy rhytm, huapango, rancheras and romantic Mexican feeling.
+                    Being a relatively young band, each member has experience of
+                    many years of musical career since 1991, played with great
+                    artists such as Alejandro Fernandez, Azucena, Pablo Montero,
+                    Marco Antonio Solis, Verónica Castro, Lucha Villa, Los
+                    Temerarios, Humberto Estrada, Martin Urieta and Cuco Sanchez.
+                    with all the joy and a real intense Mexican feeling, Mariachi
+                    Nuevo Jalisco invites you to check out your next event.
+                  </p>
+              </blockquote><!-- quote end -->
+              <p class="text-justify">
+                  Originally from San Luis Potosi, Mexico, we have a great repertoire to liven up your event. Don't miss out on listening to us! &nbsp;&nbsp;<a class="link-underline" href="#contact">Contact</a>.
+              </p>
+          </div><!-- col end -->
+      </div>
       </section>
       <section id="services" class="container-fluid p-5 bg-body-secondary">
         <h2 class="h2-section mx-4 text-center p-5 fs-3">SERVICES</h2>
@@ -263,9 +301,10 @@
       >
         <!-- Social media section -->
         <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
+          <img src="img/logo2.png" alt="logo" class="img-fluid">
         </div>
         <div>
+          <span>Get connected with us on social networks: </span>
           <a href="" class="me-4 text-reset text-decoration-none">
             <i class="fa-brands fa-facebook fa-bounce"></i>
           </a>
